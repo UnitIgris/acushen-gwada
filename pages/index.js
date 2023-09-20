@@ -1,40 +1,63 @@
 import React, { useEffect, useState } from 'react';
-import { Box, Button, Container, Divider, Heading, Text } from '@chakra-ui/react';
+import { Box, Button, Container, Link, Heading, Text, Image } from '@chakra-ui/react';
 
 const Index = () => {
   const [backgroundColor, setBackgroundColor] = useState('#30391c');
+  const [color, setColor] = useState('#f3f8ea');
+  const [mediaOver1000, setMediaOver1000] = useState(false);
+
+
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       if (scrollPosition >= 500) {
         setBackgroundColor('#F3F8EA');
+        setColor("#252b2d")
       } else {
         setBackgroundColor('#30391c');
+        setColor("#f3f8ea")
       }
     };
+    const handleSize = () => {
+
+      if (window.innerWidth >= 1000) {
+        setMediaOver1000(true)
+      } else {
+        setMediaOver1000(false)
+      }
+    };
+    handleSize()
+    window.addEventListener('resize', handleSize);
     window.addEventListener('scroll', handleScroll);
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
-
   }, []);
 
   return (
     <main >
       <Box className='main-wrapper'>
         <Box className='main-content'>
-          <Box className='section-hero'>
+          <Box id='home' className='section-hero'>
             <Box className='container-heading'>
               <Box className='heading-layout'>
-                <Heading variant="heading-title"  >We don't strive to be the best studio in the world ,we strive to be the best studio in your world. Let's get your project done right the first time.</Heading>
-                <Button>
-                  SCHEDULE A CALL
+                <Heading variant="heading-title">
+                  Explorez le voyage holistique du monde de la Médecine Chinoise.
+                  Votre mieux-être est ma priorité absolue.
+                </Heading>
+                <Text fontSize={"xl"}>
+                  Chaque session est adaptée pour répondre à vos besoins individuels et
+                  vous guider vers un état debien-être optimal en utilisant des
+                  techniques éprouvées depuis des siècles.
+                </Text>
+                <Button sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", px: "30px" }}>
+                  CONTACTER
                 </Button>
               </Box>
             </Box>
           </Box>
-          <Box className='section-about'>
+          <Box id="a-propos" className='section-about'>
             <Box className='container-content'>
               <Box className='title'>
                 <Heading variant={'heading-italic'}>À-propos</Heading>
@@ -83,7 +106,7 @@ const Index = () => {
               </Box>
             </Box>
           </Box>
-          <Box className='section-tech-info'>
+          <Box id='tech' className='section-tech-info'>
             <Box className='container-content'>
               <Box className='title'>
                 <Heading variant={'heading-italic'}>Techniques</Heading>
@@ -137,7 +160,7 @@ const Index = () => {
                   </Box>
                   <Box className='service-item' >
                     <Heading variant={"heading-3"}>
-                      Thérapie par les Ventouses
+                      Thérapie par les ventouses
                     </Heading>
                     <Text>
                       La thérapie par les ventouses est une pratique présente dans de nombreuses cultures.
@@ -147,7 +170,7 @@ const Index = () => {
                   </Box>
                   <Box className='service-item' >
                     <Heading variant={"heading-3"}>
-                      Tuina Pédiatrique
+                      Tuina pédiatrique
                     </Heading>
                     <Text>
                       Un massage doux et sans risque d'effets secondaires, adapté aux tout-petits de 0 à 3 ans.
@@ -159,7 +182,7 @@ const Index = () => {
                   </Box>
                   <Box className='service-item' >
                     <Heading variant={"heading-3"}>
-                      Acupuncture Esthétique Faciale
+                      Acupuncture esthétique faciale
                     </Heading>
                     <Text>
                       Une méthode pour ralentir le vieillissement cutané en stimulant la circulation sanguine
@@ -173,7 +196,7 @@ const Index = () => {
               </Box>
             </Box>
           </Box>
-          <Box className='section-price'>
+          <Box id='price' className='section-price'>
             <Box className='container-content'>
               <Box className='title'>
                 <Heading variant={'heading-italic'}>Tarifs</Heading>
@@ -251,29 +274,63 @@ const Index = () => {
           </Box>
 
 
-        </Box>
-        <nav className='navbar' style={{
-          backgroundColor: backgroundColor,
-          willChange: 'background-color'
-        }}>
-          <Box className='menu-wrapper'>
-            <Box className='menu-layout'>
-              <a>Home</a>
-              <a>À-propos</a>
-              <a>Techniques</a>
-              <a>Tarifs</a>
-              <a>Contact</a>
+        </Box>{mediaOver1000 ?
+          <nav className='navbar'
+            style={{
+              backgroundColor: backgroundColor,
+              willChange: 'background-color'
+            }}>
+            <Box className='menu-wrapper'>
+              <Box className='menu-layout'>
+                <Link href='#home' sx={{ color: color, willChange: 'background-color' }}>Home</Link>
+                <Link href='#a-propos' sx={{ color: color, willChange: 'background-color' }}>À-propos</Link>
+                <Link href='#tech' sx={{ color: color, willChange: 'background-color' }}>Techniques</Link>
+                <Link href='#price' sx={{ color: color, willChange: 'background-color' }}>Tarifs</Link>
+                <Link href='#contact' sx={{ color: color, willChange: 'background-color' }}>Contact</Link>
+              </Box>
+            </Box>
+            <Box className='info'>
+              <Text sx={{ color: color, willChange: 'background-color' }}> Cabinet basé en Guadeloupe qui se sent davantage comme votre partenaire. Spécialisés dans la santé et le bien-être holistiques.</Text>
+              <Heading color={color} sx={{ fontFamily: "Albra", marginTop: "40px" }} >AcushenGwada</Heading>
+            </Box>
+          </nav>
+          :
+          <nav style={{ background: backgroundColor }} className='navbar-mobile'>
+            <Heading color={color} >AcushenGwada</Heading>
+          </nav>
+        }
+
+
+      </Box>
+      <Box id='contact' className='footer'>
+
+        <Box className='footer-layout'>
+          <Box className='footer-content'>
+            <Box className='content-wrapper'>
+              <Heading>
+                Prenez rendez-vous dès aujourd'hui pour votre mieux-être.
+              </Heading>
+              <Button sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", px: "30px" }}>
+                CONTACTER
+              </Button>
+            </Box>
+            <Box className='founder-wrapper'>
+              <Text className='founder-name'>
+                Céline LUNION
+              </Text>
+              <Text className='founder-text'>
+                FONDATRICE
+              </Text>
             </Box>
           </Box>
-          <Box className='info'>
-            <Text> Studios is the Los Angeles design and development studio that feel more like your partners. We specialize in Webflow.</Text>
-            <Button>Acushen Gwada</Button>
+          <Box className='footer-buttons'>
+            <Link>Facebook</Link>
           </Box>
-        </nav>
-      </Box>
-      <Box className='footer'>
-        <Box></Box>
-        <Box className='full-logo'></Box>
+        </Box>
+
+        <Box className='full-logo'>
+          {mediaOver1000 ?<Image src='./fullLogoTrim.png'></Image> :<Image src='./mobileLogoTrim.png'></Image> }
+        </Box>
       </Box>
     </main>
   )
