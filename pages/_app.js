@@ -6,6 +6,7 @@ import "../styles/style.css"
 const App = ({ Component, pageProps }) => {
     return (
         <ChakraProvider theme={theme}>
+            <title>Acushen Gwada</title>
             <Component {...pageProps} />
         </ChakraProvider>
     )
