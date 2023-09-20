@@ -296,7 +296,7 @@ const Index = () => {
           </nav>
           :
           <nav style={{ background: backgroundColor }} className='navbar-mobile'>
-            <Heading color={color} >AcushenGwada</Heading>
+            <Heading color={color} sx={{fontFamily: "Albra"}} >AcushenGwada</Heading>
           </nav>
         }
 
