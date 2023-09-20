@@ -43,12 +43,17 @@ const Index = () => {
             <Box className='container-heading'>
               <Box className='heading-layout'>
                 <Heading variant="heading-title">
-                  Explorez le voyage holistique du monde de la Médecine Chinoise.
-                  Votre mieux-être est ma priorité absolue.
+                  Empruntez le chemin du monde holistique
+                  de la médecine chinoise avec <Heading sx={{ fontFamily: "Albra" }} variant="heading-title">
+                    AcushenGwada.
+                  </Heading>
+                </Heading>
+                <Heading variant="heading-title">
+                  Votre mieux être est ma priorité absolue.
                 </Heading>
                 <Text fontSize={"xl"}>
-                  Chaque session est adaptée pour répondre à vos besoins individuels et
-                  vous guider vers un état debien-être optimal en utilisant des
+                  Chaque séance est adaptée pour répondre à vos besoins individuels et
+                  vous guider vers un état de bien-être optimal en utilisant des
                   techniques éprouvées depuis des siècles.
                 </Text>
                 <Button sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", px: "30px" }}>
@@ -57,51 +62,49 @@ const Index = () => {
               </Box>
             </Box>
           </Box>
-          <Box id="a-propos" className='section-about'>
+          <Box id="medecine" className='section-about'>
             <Box className='container-content'>
               <Box className='title'>
-                <Heading variant={'heading-italic'}>À-propos</Heading>
+                <Heading variant={'heading-italic'}>La médecine chinoise</Heading>
               </Box>
               <Box className='layout-content'>
                 <Text style={{ opacity: "1", maxWidth: "130px", width: "20%" }}>Harmonie et équilibre</Text>
                 <Box className='content'>
                   <Box className='main-block'>
                     <Heading variant={"heading-3"}>
-                      La médecine chinoise au service de votre bien-être
+                      Qu'est-ce que la médecine chinoise ?
                     </Heading>
                     <Text>
-                      La Médecine Chinoise, un trésor de sagesse millénaire, considère chaque
-                      individu comme un tout indissociable de son environnement, de ses besoins et
-                      de ses émotions. C'est en explorant cette globalité que cette discipline
-                      ancestrale identifie et traite les causes profondes des déséquilibres.
-                      Elle repose sur des théories fondatrices universellement reconnues et
-                      demeure une source d'inspiration pour les praticiens et chercheurs à travers
-                      le monde.
+                      Savoir séculaire, la Médecine Chinoise repose sur des théories et des textes fondateurs auxquels se réfèrent
+                      encore aujourd'hui tous les praticiens et les chercheurs dans ce domaine , et cela dans le monde entier.
+                      La Médecine Chinoise considère que l'individu, étant indissociable de son environnement, de ses besoins et de
+                      ses émotions, doit être appréhender dans sa globalité pour mieux analyser et trouver les causes profondes d'un éventuel déséquilibre.
+                      Cette approche holistique vise à rétablir et/ou entretenir l'harmonie, l'équilibre du corps et de l'esprit.
+                      La Médecine Chinoise s'articule autour de techniques utilisées avec des outils personnalisés afin de répondre aux
+                      besoins spécifiques de chaque individu à l'instant T de la consultation.
                     </Text>
                   </Box>
-                  <Box className='sub-block'>
-                    <Box style={{ display: "flex", gap: "13px", flexDirection: "column" }}>
-                      <Heading className='sub-title'>Troubles fonctionnels et fouleurs</Heading>
-                      <Text>
-                        Solutions pour la fatigue, maux de tête,
-                        vertiges, douleurs aiguës ou chroniques.
-                      </Text>
-                    </Box>
-                    <Box style={{ display: "flex", gap: "13px", flexDirection: "column" }}>
-                      <Heading className='sub-title'>Équilibre digestif et respiratoire</Heading>
-                      <Text>
-                        Restauration de l'harmonie pour les troubles digestifs,
-                        respiratoires aigus ou chroniques.
-                      </Text>
-                    </Box>
-                    <Box style={{ display: "flex", gap: "13px", flexDirection: "column" }}>
-                      <Heading className='sub-title'>Appareil urinaire, reproducteur et grossesse</Heading>
-                      <Text>
-                        Solutions sur mesure pour fertilité, ménopause,
-                        grossesse épanouie, troubles urinaires et reproducteurs.
-                      </Text>
-                    </Box>
+                  <Box className='main-block'>
+                    <Heading variant={"heading-3"}>
+                      La médecine chinoise, pour qui, pour quoi ?
+                    </Heading>
+                    <Text>
+                        La Médecine Chinoise s'adresse à tous les âges, et concerne tous les troubles aigus chroniques:
+                        <ul className='blocktab'>
+                          <li>Troubles fonctionnels (fatigue, maux de tête, vertiges, colon irritable…)</li>
+                          <li>Douleurs aigues ou chroniques.</li>
+                          <li>Troubles digestifs (vomissements, constipation, diarrhée, spasmes, inappétence…)</li>
+                          <li>Troubles respiratoires ( asthme ,toux chronique, saignements de nez…)</li>
+                          <li>Troubles urinaires et de l'appareil reproducteur (infections urinaires répétées, incontinence, leucorrhées, ménopause ,baisse de libido ,fertilité, trouble de la fonction érectile…)</li>
+                          <li>Grossesse (nausées, problèmes de lactation, dépression post-partum, maux de dos…)</li>
+                          <li>Troubles dermato (acné, zona, psoriasis, urticaire…)</li>
+                          <li>Troubles locomoteurs, nerveux, circulatoires.</li>
+                          <li>Troubles psycho-émotionnels (stress, anxiété, dépression…)</li>
+                        </ul>
+                        <Text sx={{ fontStyle: "italic", fontSize: "14px" }}>Pour autant, la consultation d'un praticien en Médecine Chinoise ne dispense en aucune façon d'un suivi médical.</Text>
+                    </Text>
                   </Box>
+
                 </Box>
               </Box>
             </Box>
@@ -149,6 +152,16 @@ const Index = () => {
                   </Box>
                   <Box className='service-item' >
                     <Heading variant={"heading-3"}>
+                      Thérapie par les ventouses
+                    </Heading>
+                    <Text>
+                      La thérapie par les ventouses est une pratique présente dans de nombreuses cultures.
+                      Elle implique l'application de ventouses sur la peau pour stimuler la circulation
+                      de l'énergie et du sang, soulageant ainsi divers troubles et débloquant les méridiens.
+                    </Text>
+                  </Box>
+                  <Box className='service-item' >
+                    <Heading variant={"heading-3"}>
                       Auriculothérapie
                     </Heading>
                     <Text>
@@ -160,12 +173,14 @@ const Index = () => {
                   </Box>
                   <Box className='service-item' >
                     <Heading variant={"heading-3"}>
-                      Thérapie par les ventouses
+                      Acupuncture esthétique faciale
                     </Heading>
                     <Text>
-                      La thérapie par les ventouses est une pratique présente dans de nombreuses cultures.
-                      Elle implique l'application de ventouses sur la peau pour stimuler la circulation
-                      de l'énergie et du sang, soulageant ainsi divers troubles et débloquant les méridiens.
+                      Une méthode pour ralentir le vieillissement cutané en stimulant la circulation sanguine
+                      et en tonifiant les muscles du visage avec des aiguilles. Le lifting est progressif,
+                      le nombre de séances est variable. Idéal en prévention (une séance mensuelle) ou dès
+                      les premiers signes de relâchement cutané. Efficace contre les rides installées, avec un bilan
+                      énergétique lors de la première séance pour corriger les déséquilibres internes.
                     </Text>
                   </Box>
                   <Box className='service-item' >
@@ -173,23 +188,16 @@ const Index = () => {
                       Tuina pédiatrique
                     </Heading>
                     <Text>
-                      Un massage doux et sans risque d'effets secondaires, adapté aux tout-petits de 0 à 3 ans.
-                      Il vise à corriger en douceur des déséquilibres courants tels que les troubles digestifs,
-                      urinaires et de la sphère ORL. La durée et la fréquence des séances varient de 15 à 30
-                      minutes en fonction de l'âge et du déséquilibre à corriger. Il peut également renforcer
-                      le système immunitaire et favoriser le développement harmonieux des tout-petits.
-                    </Text>
-                  </Box>
-                  <Box className='service-item' >
-                    <Heading variant={"heading-3"}>
-                      Acupuncture esthétique faciale
-                    </Heading>
-                    <Text>
-                      Une méthode pour ralentir le vieillissement cutané en stimulant la circulation sanguine
-                      et en tonifiant les muscles du visage avec des aiguilles. Le lifting est progressif,
-                      le nombre de séances est variable. Idéal en prévention (une séance mensuelle) ou dès
-                      les premiers signes de relâchement. Efficace contre les rides installées, avec un bilan
-                      énergétique lors de la première séance pour corriger les déséquilibres internes.
+                      Un massage doux et sans effets indésirables, adapté aux tout-petits de 0 à 3 ans.
+                      Il vise à corriger en douceur des déséquilibres courants tels que:
+                      <ul className='blocktab'>
+                        <li>Des troubles digestifs (reflux gastrique, constipation, diarrhée, perte de poids, inappétence…)</li>
+                        <li>Des troubles urinaires (pipi au lit)</li>
+                        <li>Des troubles de la sphère ORL (rhume, encombrement bronchique fréquents, poussées dentaires…)</li>
+                      </ul>
+                      La durée et la fréquence des séances varient de 15 à 30
+                      minutes en fonction de l'âge et du déséquilibre à corriger. Il peut également renforcer le
+                      système immunitaire et favoriser le développement harmonieux des tout-petits.
                     </Text>
                   </Box>
                 </Box>
@@ -208,7 +216,7 @@ const Index = () => {
                   </Text>
                   <Box className='info'>
                     <Text className='time'>
-                      1h30-1h
+                      1h-1h30
                     </Text>
                     <Text className='text'>
                       Tarification dégressive si nécessité de plusieurs séances pour la même problématique.
@@ -236,14 +244,14 @@ const Index = () => {
                 </Box>
                 <Box className='price-item'>
                   <Text className='title'>
-                    Ventouses OU upping therapy
+                    Ventouses OU cupping therapy
                   </Text>
                   <Box className='info'>
                     <Text className='time'>
                       1h
                     </Text>
                     <Text className='text'>
-                      Tarification dégressive si nécessité de plusieurs séances pour la même problématique.
+                     
                     </Text>
                   </Box>
                   <Text className='price'>
@@ -256,10 +264,10 @@ const Index = () => {
                   </Text>
                   <Box className='info'>
                     <Text className='time'>
-                      1h30-1h
+                      1h  
                     </Text>
                     <Text className='text'>
-                      Tarification dégressive si nécessité de plusieurs séances pour la même problématique.
+                      
                     </Text>
                   </Box>
                   <Text className='price'>
@@ -283,20 +291,20 @@ const Index = () => {
             <Box className='menu-wrapper'>
               <Box className='menu-layout'>
                 <Link href='#home' sx={{ color: color, willChange: 'background-color' }}>Home</Link>
-                <Link href='#a-propos' sx={{ color: color, willChange: 'background-color' }}>À-propos</Link>
+                <Link href='#medecine' sx={{ color: color, willChange: 'background-color' }}>La médecine chinoise</Link>
                 <Link href='#tech' sx={{ color: color, willChange: 'background-color' }}>Techniques</Link>
                 <Link href='#price' sx={{ color: color, willChange: 'background-color' }}>Tarifs</Link>
                 <Link href='#contact' sx={{ color: color, willChange: 'background-color' }}>Contact</Link>
               </Box>
             </Box>
             <Box className='info'>
-              <Text sx={{ color: color, willChange: 'background-color' }}> Cabinet basé en Guadeloupe qui se sent davantage comme votre partenaire. Spécialisés dans la santé et le bien-être holistiques.</Text>
+              <Text sx={{ color: color, willChange: 'background-color' }}> Basé en Guadeloupe et spécialisé dans la santé et le bien-être holistiques.</Text>
               <Heading color={color} sx={{ fontFamily: "Albra", marginTop: "40px" }} >AcushenGwada</Heading>
             </Box>
           </nav>
           :
           <nav style={{ background: backgroundColor }} className='navbar-mobile'>
-            <Heading color={color} sx={{fontFamily: "Albra"}} >AcushenGwada</Heading>
+            <Heading color={color} sx={{ fontFamily: "Albra" }} >AcushenGwada</Heading>
           </nav>
         }
 
@@ -329,7 +337,7 @@ const Index = () => {
         </Box>
 
         <Box className='full-logo'>
-          {mediaOver1000 ?<Image src='./fullLogoTrim.png'></Image> :<Image src='./mobileLogoTrim.png'></Image> }
+          {mediaOver1000 ? <Image src='./fullLogoTrim.png'></Image> : <Image src='./mobileLogoTrim.png'></Image>}
         </Box>
       </Box>
     </main>
