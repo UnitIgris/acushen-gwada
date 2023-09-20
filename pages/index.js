@@ -75,12 +75,12 @@ const Index = () => {
                       Qu'est-ce que la médecine chinoise ?
                     </Heading>
                     <Text>
-                      Savoir séculaire, la Médecine Chinoise repose sur des théories et des textes fondateurs auxquels se réfèrent
+                      Savoir séculaire, la médecine chinoise repose sur des théories et des textes fondateurs auxquels se réfèrent
                       encore aujourd'hui tous les praticiens et les chercheurs dans ce domaine , et cela dans le monde entier.
-                      La Médecine Chinoise considère que l'individu, étant indissociable de son environnement, de ses besoins et de
+                      La médecine chinoise considère que l'individu, étant indissociable de son environnement, de ses besoins et de
                       ses émotions, doit être appréhender dans sa globalité pour mieux analyser et trouver les causes profondes d'un éventuel déséquilibre.
                       Cette approche holistique vise à rétablir et/ou entretenir l'harmonie, l'équilibre du corps et de l'esprit.
-                      La Médecine Chinoise s'articule autour de techniques utilisées avec des outils personnalisés afin de répondre aux
+                      La médecine chinoise s'articule autour de techniques utilisées avec des outils personnalisés afin de répondre aux
                       besoins spécifiques de chaque individu à l'instant T de la consultation.
                     </Text>
                   </Box>
@@ -89,19 +89,19 @@ const Index = () => {
                       La médecine chinoise, pour qui, pour quoi ?
                     </Heading>
                     <Text>
-                        La Médecine Chinoise s'adresse à tous les âges, et concerne tous les troubles aigus chroniques:
+                        La médecine chinoise s'adresse à tous les âges, et concerne tous les troubles aigus chroniques:
                         <ul className='blocktab'>
                           <li>Troubles fonctionnels (fatigue, maux de tête, vertiges, colon irritable…)</li>
                           <li>Douleurs aigues ou chroniques.</li>
                           <li>Troubles digestifs (vomissements, constipation, diarrhée, spasmes, inappétence…)</li>
                           <li>Troubles respiratoires ( asthme ,toux chronique, saignements de nez…)</li>
-                          <li>Troubles urinaires et de l'appareil reproducteur (infections urinaires répétées, incontinence, leucorrhées, ménopause ,baisse de libido ,fertilité, trouble de la fonction érectile…)</li>
+                          <li>Troubles urinaires et de l'appareil reproducteur (infections urinaires répétées, incontinence, leucorrhées, ménopause ,baisse de libido ,fertilité, troubles de la fonction érectile…)</li>
                           <li>Grossesse (nausées, problèmes de lactation, dépression post-partum, maux de dos…)</li>
                           <li>Troubles dermato (acné, zona, psoriasis, urticaire…)</li>
                           <li>Troubles locomoteurs, nerveux, circulatoires.</li>
                           <li>Troubles psycho-émotionnels (stress, anxiété, dépression…)</li>
                         </ul>
-                        <Text sx={{ fontStyle: "italic", fontSize: "14px" }}>Pour autant, la consultation d'un praticien en Médecine Chinoise ne dispense en aucune façon d'un suivi médical.</Text>
+                        <Text sx={{ fontStyle: "italic", fontSize: "14px" }}>Pour autant, la consultation d'un praticien en médecine chinoise ne dispense en aucune façon d'un suivi médical.</Text>
                     </Text>
                   </Box>
 
@@ -122,8 +122,8 @@ const Index = () => {
                       Acupuncture
                     </Heading>
                     <Text>
-                      La Médecine Chinoise enseigne que le corps humain est traversé de haut
-                      en bas par un réseau immatériel où circule le Qi, une énergie vitale.
+                      La médecine chinoise enseigne que le corps humain est traversé de haut
+                      en bas par un réseau immatériel où circule le Qi, l'énergie vitale.
                       Ces voies sont appelées méridiens, sur lesquels se trouvent des points
                       cutanés spécifiques que le praticien stimule pour rétablir la circulation
                       énergétique dans l'organisme.
@@ -134,7 +134,7 @@ const Index = () => {
                       Guasha
                     </Heading>
                     <Text>
-                      Le Guasha est une technique énergique qui implique un frottement vigoureux
+                      Le Guasha est une technique qui implique un frottement vigoureux
                       d'une zone spécifique du corps à l'aide d'un outil dédié. Son objectif
                       est d'améliorer la circulation sanguine pour éliminer les toxines et soulager
                       les tensions musculaires.
