@@ -44,9 +44,9 @@ const Index = () => {
               <Box className='heading-layout'>
                 <Heading variant="heading-title">
                   Empruntez le chemin du monde holistique
-                  de la médecine chinoise avec <Heading sx={{ fontFamily: "Albra" }} variant="heading-title">
+                  de la médecine chinoise avec <Text sx={{ fontFamily: "Albra" }} variant="heading-title">
                     AcushenGwada.
-                  </Heading>
+                  </Text>
                 </Heading>
                 <Heading variant="heading-title">
                   Votre mieux être est ma priorité absolue.
@@ -56,9 +56,9 @@ const Index = () => {
                   vous guider vers un état de bien-être optimal en utilisant des
                   techniques éprouvées depuis des siècles.
                 </Text>
-                <Button sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", px: "30px" }}>
+                <Link href={"https://wa.me/590690486864"} sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", p: "7px 30px 7px 30px", fontWeight: 500, }}>
                   CONTACTER
-                </Button>
+                </Link>
               </Box>
             </Box>
           </Box>
@@ -89,20 +89,21 @@ const Index = () => {
                       La médecine chinoise, pour qui, pour quoi ?
                     </Heading>
                     <Text>
-                        La médecine chinoise s'adresse à tous les âges, et concerne tous les troubles aigus chroniques:
-                        <ul className='blocktab'>
-                          <li>Troubles fonctionnels (fatigue, maux de tête, vertiges, colon irritable…)</li>
-                          <li>Douleurs aigues ou chroniques.</li>
-                          <li>Troubles digestifs (vomissements, constipation, diarrhée, spasmes, inappétence…)</li>
-                          <li>Troubles respiratoires ( asthme ,toux chronique, saignements de nez…)</li>
-                          <li>Troubles urinaires et de l'appareil reproducteur (infections urinaires répétées, incontinence, leucorrhées, ménopause ,baisse de libido ,fertilité, troubles de la fonction érectile…)</li>
-                          <li>Grossesse (nausées, problèmes de lactation, dépression post-partum, maux de dos…)</li>
-                          <li>Troubles dermato (acné, zona, psoriasis, urticaire…)</li>
-                          <li>Troubles locomoteurs, nerveux, circulatoires.</li>
-                          <li>Troubles psycho-émotionnels (stress, anxiété, dépression…)</li>
-                        </ul>
-                        <Text sx={{ fontStyle: "italic", fontSize: "14px" }}>Pour autant, la consultation d'un praticien en médecine chinoise ne dispense en aucune façon d'un suivi médical.</Text>
+                      La médecine chinoise s'adresse à tous les âges, et concerne tous les troubles aigus chroniques:
                     </Text>
+                    <ul className='blocktab'>
+                      <li>Troubles fonctionnels (fatigue, maux de tête, vertiges, colon irritable…)</li>
+                      <li>Douleurs aigues ou chroniques.</li>
+                      <li>Troubles digestifs (vomissements, constipation, diarrhée, spasmes, inappétence…)</li>
+                      <li>Troubles respiratoires ( asthme ,toux chronique, saignements de nez…)</li>
+                      <li>Troubles urinaires et de l'appareil reproducteur (infections urinaires répétées, incontinence, leucorrhées, ménopause ,baisse de libido ,fertilité, troubles de la fonction érectile…)</li>
+                      <li>Grossesse (nausées, problèmes de lactation, dépression post-partum, maux de dos…)</li>
+                      <li>Troubles dermato (acné, zona, psoriasis, urticaire…)</li>
+                      <li>Troubles locomoteurs, nerveux, circulatoires.</li>
+                      <li>Troubles psycho-émotionnels (stress, anxiété, dépression…)</li>
+                    </ul>
+                    <Text sx={{ fontStyle: "italic", fontSize: "14px" }}>Pour autant, la consultation d'un praticien en médecine chinoise ne dispense en aucune façon d'un suivi médical.</Text>
+
                   </Box>
 
                 </Box>
@@ -190,15 +191,16 @@ const Index = () => {
                     <Text>
                       Un massage doux et sans effets indésirables, adapté aux tout-petits de 0 à 3 ans.
                       Il vise à corriger en douceur des déséquilibres courants tels que:
-                      <ul className='blocktab'>
-                        <li>Des troubles digestifs (reflux gastrique, constipation, diarrhée, perte de poids, inappétence…)</li>
-                        <li>Des troubles urinaires (pipi au lit)</li>
-                        <li>Des troubles de la sphère ORL (rhume, encombrement bronchique fréquents, poussées dentaires…)</li>
-                      </ul>
-                      La durée et la fréquence des séances varient de 15 à 30
-                      minutes en fonction de l'âge et du déséquilibre à corriger. Il peut également renforcer le
-                      système immunitaire et favoriser le développement harmonieux des tout-petits.
                     </Text>
+                    <ul className='blocktab'>
+                      <li>Des troubles digestifs (reflux gastrique, constipation, diarrhée, perte de poids, inappétence…)</li>
+                      <li>Des troubles urinaires (pipi au lit)</li>
+                      <li>Des troubles de la sphère ORL (rhume, encombrement bronchique fréquents, poussées dentaires…)</li>
+                    </ul>
+                    La durée et la fréquence des séances varient de 15 à 30
+                    minutes en fonction de l'âge et du déséquilibre à corriger. Il peut également renforcer le
+                    système immunitaire et favoriser le développement harmonieux des tout-petits.
+
                   </Box>
                 </Box>
               </Box>
@@ -251,7 +253,7 @@ const Index = () => {
                       1h
                     </Text>
                     <Text className='text'>
-                     
+
                     </Text>
                   </Box>
                   <Text className='price'>
@@ -264,10 +266,10 @@ const Index = () => {
                   </Text>
                   <Box className='info'>
                     <Text className='time'>
-                      1h  
+                      1h
                     </Text>
                     <Text className='text'>
-                      
+
                     </Text>
                   </Box>
                   <Text className='price'>
@@ -318,9 +320,9 @@ const Index = () => {
               <Heading>
                 Prenez rendez-vous dès aujourd'hui pour votre mieux-être.
               </Heading>
-              <Button sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", px: "30px" }}>
+              <Link href={"https://wa.me/590690486864"} sx={{ background: "#f3f8ea", color: "#252b2d", borderRadius: "20px", width: "fit-content", p: "7px 30px 7px 30px", fontWeight: 500, }}>
                 CONTACTER
-              </Button>
+              </Link>
             </Box>
             <Box className='founder-wrapper'>
               <Text className='founder-name'>
@@ -332,7 +334,7 @@ const Index = () => {
             </Box>
           </Box>
           <Box className='footer-buttons'>
-            <Link>Facebook</Link>
+            <Link href='https://www.facebook.com/profile.php?id=100084258504314' isExternal>Facebook</Link>
           </Box>
         </Box>
 
